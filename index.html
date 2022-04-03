@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input {
+                width: 3em;
+            }
+            .selected {
+                background-color: red;
+            }
+            .inp-catg input {
+                width: 8em;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <label>Number of questions: </label>
+            <input id="count-ques" type="number"> <br>
+
+            <!-- <label>Categories of options in each question:</label>
+            <input id="count-catg" type="number"> <br> -->
+
+            <label>Number of options in each category</label>
+            <input id="count-opts" type="number"> <br>
+
+            <button onclick="generateMcqs()">Generate Options</button> <br>
+        </div>
+        
+        <div id="mcqs">
+            <ol id="ques-list"></ol>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
