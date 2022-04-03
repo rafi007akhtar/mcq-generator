@@ -25,7 +25,10 @@ function generateMcqs() {
 function showCategoryInput(que, i) {
     const selector = `#ques-${i} .inp-catg`;
     const inpCatg = document.querySelector(selector);
-    inpCatg.innerHTML = `<input type="number" id="catg-${i}" placeholder="# of categories"> <button onclick="renderCategories(${i})">Go</button>`
+    inpCatg.innerHTML = `
+        <input type="number" id="catg-${i}" placeholder="# of categories">
+        <button onclick="renderCategories(${i})">Go</button>
+    `
 }
 
 function renderCategories(q) {
